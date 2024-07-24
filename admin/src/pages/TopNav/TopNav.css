@@ -3,7 +3,8 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2.5rem;
+  padding: 1rem 3.5rem;
+  box-shadow: var(--box-shadow);
 }
 
 .logo-search {
@@ -12,7 +13,12 @@
 }
 
 .logo-search h2 {
-  letter-spacing: 0.08em;
+  font-size: 1.7rem;
+  cursor: pointer;
+}
+
+.logo-search h2 span {
+  color: var(--title-color);
 }
 
 .search-container {
@@ -40,14 +46,38 @@
   cursor: pointer;
 }
 
-.icon {
+.menu-icon {
   cursor: pointer;
-  height: 36px;
-  width: 36px;
-  border: 1px solid #ccc;
-  border-radius: 0 5px 5px 0;
+  display: none;
+  font-size: 1.4rem;
+}
+
+.nav-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-item ul a {
+  margin-right: 30px;
+  color: var(--nav-color);
+  font-size: 1.2rem;
+  position: relative;
+}
+
+.nav-item ul a:hover::after {
+  width: 100%;
+}
+
+.nav-item ul a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0%;
+  height: 3px;
   background-color: var(--ascent-color);
-  border-left: none;
+  transition: all 0.5s;
 }
 
 .notification,
