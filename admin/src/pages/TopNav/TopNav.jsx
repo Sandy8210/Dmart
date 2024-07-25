@@ -13,8 +13,6 @@ import Input from "../../component/Input/Input";
 import { ThemeContext } from "../../context/ThemeContext";
 import "./TopNav.css";
 import "./TopNavResponsive.css";
-import { navData } from "../../utills/navData";
-import { NavLink } from "react-router-dom";
 
 const TopNav = () => {
   const { theme, toggleTheme } = useContext(ThemeContext);
@@ -28,7 +26,7 @@ const TopNav = () => {
     <div className="nav">
       <div className="logo-search">
         <h2>
-          <span>D</span>mart<span> DashBoard</span>
+          <span>DashBoard</span>
         </h2>
         <div className="search-container">
           <Input type="search" placeholder="Search..." className="search-bar" />
@@ -42,16 +40,6 @@ const TopNav = () => {
           icon={menuOpen ? faTimes : faBars}
           className="menu-icon"
         />
-      </div>
-
-      <div className="nav-item">
-        <ul>
-          {navData.map((item, index) => (
-            <NavLink key={index} to={item.to}>
-              {item.name}
-            </NavLink>
-          ))}
-        </ul>
       </div>
 
       <div className="user-profile">

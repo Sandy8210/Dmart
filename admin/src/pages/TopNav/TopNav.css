@@ -52,34 +52,6 @@
   font-size: 1.4rem;
 }
 
-.nav-item {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.nav-item ul a {
-  margin-right: 30px;
-  color: var(--nav-color);
-  font-size: 1.2rem;
-  position: relative;
-}
-
-.nav-item ul a:hover::after {
-  width: 100%;
-}
-
-.nav-item ul a::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -3px;
-  width: 0%;
-  height: 3px;
-  background-color: var(--ascent-color);
-  transition: all 0.5s;
-}
-
 .notification,
 .user,
 .theme {
