@@ -50,4 +50,10 @@
     => npm i body-parser
     => npm i multer
     => npm i stripe
-    => npm i validator
+    => npm i joi
+
+=========================== API END POINTS =====================================
+
+=> ADMIN ROUTER
+
+    -->  http://localhost:8080/api/admin/test  ==== [ TEST ]
