@@ -10,12 +10,12 @@ import {
   faMoon,
 } from "@fortawesome/free-solid-svg-icons";
 import Input from "../../component/Input/Input";
-import { ThemeContext } from "../../context/ThemeContext";
 import "./TopNav.css";
 import "./TopNavResponsive.css";
+import { StoreContext } from "../../context/StoreContext";
 
 const TopNav = () => {
-  const { theme, toggleTheme } = useContext(ThemeContext);
+  const { theme, toggleTheme } = useContext(StoreContext);
   const [menuOpen, setMenuOpen] = useState(false);
 
   const handleChange = () => {

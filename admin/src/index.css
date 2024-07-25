@@ -3,57 +3,31 @@
 :root {
   font-family: "Zilla Slab", serif;
 
+  --outfit-font: "Outfit", sans-serif;
+
   --light-background-color: #e8f5e9;
-  --light-primary-color: #43a047;
-  --light-secondary-color: #66bb6a;
   --light-text-color: #2e7d32;
-  --light-ascent-color: #a5d6a7;
-  --light-orange-color: #ffcc80;
-  --light-nav-color: #000;
-  --light-nav-under-color: #fff;
 
-  --dark-background-color: #263238;
-  --dark-primary-color: #388e3c;
-  --dark-secondary-color: #4caf50;
-  --dark-text-color: #c8e6c9;
-  --dark-ascent-color: #81c784;
-  --dark-orange-color: #ffab40;
-  --dark-nav-color: #fff;
-  --dark-nav-under-color: #000;
-
-  --dark-box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.75);
   --light-box-shadow: 0 0 5px 0px rgba(255, 255, 255, 0.75);
 
-  --dark-inner-box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.3);
-  --light-inner-box-shadow: inset 5px 5px 10px rgba(255, 255, 255, 0.3);
+  --dark-background-color: #263238;
+  --dark-text-color: #c8e6c9;
+
+  --dark-box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.75);
 }
 
 [data-theme="light"] {
   --background-color: var(--light-background-color);
-  --primary-color: var(--light-primary-color);
-  --secondary-color: var(--light-secondary-color);
   --text-color: var(--light-text-color);
-  --ascent-color: var(--light-ascent-color);
-  --nav-color: var(--light-nav-color);
-  --nav-under-color: var(--light-nav-under-color);
 
   --box-shadow: var(--dark-box-shadow);
-  --inner-box-shadow: var(--dark-inner-box-shadow);
-  --title-color: var(--dark-orange-color);
 }
 
 [data-theme="dark"] {
   --background-color: var(--dark-background-color);
-  --primary-color: var(--dark-primary-color);
-  --secondary-color: var(--dark-secondary-color);
   --text-color: var(--dark-text-color);
-  --ascent-color: var(--dark-ascent-color);
-  --nav-color: var(--dark-nav-color);
-  --nav-under-color: var(--dark-nav-under-color);
 
   --box-shadow: var(--light-box-shadow);
-  --inner-box-shadow: var(--light-inner-box-shadow);
-  --title-color: var(--light-orange-color);
 }
 
 * {
@@ -70,6 +44,7 @@ html {
 
 a {
   text-decoration: none;
+  color: white;
 }
 
 .container {

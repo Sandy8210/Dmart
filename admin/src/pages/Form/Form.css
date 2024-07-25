@@ -1,0 +1,66 @@
+.login-form {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border: 1px solid;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  box-shadow: var(--box-shadow);
+  transition: all 0.3s;
+  width: 400px;
+}
+
+.form:hover {
+  box-shadow: var(--hover-box-shadow);
+}
+
+.form h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.form a {
+  align-self: end;
+  margin-bottom: 20px;
+}
+
+.login-condition {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px 1rem;
+}
+
+.login-condition .checkbox {
+  width: 18px;
+  height: 18px;
+  margin-top: -5px;
+  margin-right: 8px;
+  border: none;
+  outline: none;
+}
+
+.login-condition p {
+  font-size: 0.9em;
+}
+
+.txt {
+  margin: 20px 0 10px 0;
+  cursor: pointer;
+}
+
+.txt span {
+  margin-left: 5px;
+  color: var(--secondary-color);
+}
