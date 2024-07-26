@@ -1,14 +1,10 @@
 import mongoose from "mongoose";
 import "dotenv/config";
 
-const URL = process.env.MONGO_DB_URL;
-
+const DB = process.env.DB_URL || "mongodb://localhost:27017/dmart";
 export const connectDB = async () => {
-  await mongoose
-    .connect(URL)
-    .then(() => console.log("DB connect Successful"))
-    .catch((err) => {
-      console.log(err);
-      process.exit(1);
-    });
+  mongoose
+    .connect(DB)
+    .then((res) => console.log(`${DB} connect successful`))
+    .catch((err) => console.log(err));
 };

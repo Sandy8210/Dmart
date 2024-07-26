@@ -41,16 +41,11 @@
 ======================== DEPENDENCIES ================================
 
     => npm i express
-    => npm i mongoose
-    => npm i jsonwebtoken
-    => npm i bcrypt
-    => npm i cors
     => npm i nodemon
     => npm i dotenv
-    => npm i body-parser
-    => npm i multer
-    => npm i stripe
-    => npm i joi
+    => npm i mongoose
+    => npm i cors
+   
 
 =========================== API END POINTS =====================================
 
