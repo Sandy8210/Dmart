@@ -45,6 +45,7 @@
     => npm i dotenv
     => npm i mongoose
     => npm i cors
+    => npm i joi
    
 
 =========================== API END POINTS =====================================
@@ -52,3 +53,5 @@
 => ADMIN ROUTER
 
     -->  http://localhost:8080/api/admin/test  ==== [ TEST ]
+
+    --> http://localhost:8080/api/admin/register  === [ ADMIN-REGISTER ]
