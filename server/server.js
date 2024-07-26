@@ -6,14 +6,15 @@ import adminRouter from "./route/adminRoute.js";
 
 // ! APP CONFIG
 const app = express();
-const PORT = 8080;
+const PORT = process.env.PORT || 8080;
+// const PORT = 8080;
 
 // ! MIDDELEWARE
 app.use(express.json());
 app.use(cors());
 
 // ! DB CONNECTION
-connectDB();
+// connectDB();
 
 // ! API ENDPOINTS
 app.use("/api/admin", adminRouter);
